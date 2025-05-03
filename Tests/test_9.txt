@@ -1,0 +1,10 @@
+## p4g7, test our unconditional jump
+begin
+identifier x := 5 ;
+{
+   portal x ;
+   set x = x + 1 ;
+   cout x ;
+   gateway x ;
+}
+end

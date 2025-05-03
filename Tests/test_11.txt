@@ -1,0 +1,12 @@
+## p4g11, if else with two blocks
+begin
+identifier x := 5 ;
+{
+    if [ 0 < x ] then {
+        cout x ;
+    }
+    else {
+        cout : x ;
+    } ;
+}
+end

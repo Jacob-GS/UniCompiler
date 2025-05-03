@@ -1,0 +1,10 @@
+## p4g8, testing until statement, should count down from 5
+begin
+identifier x := 5 ;
+{
+   until [ x ] {
+     set x = x - 1 ;
+     cout x ;
+   } ;
+}
+end

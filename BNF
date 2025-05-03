@@ -1,0 +1,28 @@
+(Please ensure this uses only tokens detected in your P1, no exceptions. Note that some legal tokens
+will pass the scanner but will always lead to an error here as they are not part of the BNF,
+that is I decided not to use them)
+
+<program>   ->  begin <vars> <block> end
+<block>     ->  { <vars> <stats> }
+<vars>      ->  empty | identifier Identifier :=  Integer  ;  <vars>
+<expr>      ->  <N> <exprPrime>
+<exprPrime> ->  - <N> <exprPrime> | empty
+<N>         ->  <A> <NPrime>
+<NPrime>    ->  + <A> <NPrime> | * <A> <NPrime> | empty
+<A>         ->  <M> <APrime>
+<APrime>    ->  / <M> <APrime> | empty
+<M>         ->  : <M> |  <R>
+<R>         ->  ( <expr> ) | Identifier | Integer
+<stats>     ->  <stat>  <mStat>
+<mStat>     ->  empty |  <stat>  <mStat>
+<stat>      ->  <in> ;  | <out> ;  | <block> | <if> ;  | <loop> ;  |
+		<assign> ; | <goto> ; | <label> ;
+<in>        ->  cin  Identifier
+<out>       ->  out <expr>
+<if>        ->  if [ <expr> <RO> <expr> ] then <stat> <else>
+<else>      ->  else <stat> | empty
+<loop>      ->  while  [ <expr> <RO> <expr> ]  <stat> | until [ <expr> ]  <stat>
+<assign>    ->  set Identifier  = <expr>
+<RO>        ->  >  | < |  ==  | >= | <= | ...
+<label>     ->  portal Identifier
+<goto>      ->  gateway Identifier

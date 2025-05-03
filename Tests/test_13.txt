@@ -1,0 +1,13 @@
+## p4g13, simple while with block
+begin
+identifier x := 5 ;
+{
+    while [ x < 10 ] {
+        set x = x + 1 ;
+        cout x ;
+    } ;
+
+    cout  x ;
+
+}
+end

@@ -1,0 +1,7 @@
+## p4g5, / and negation
+begin
+identifier x := 10 ;
+{
+    cout x / : 2 ;
+}
+end

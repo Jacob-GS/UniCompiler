@@ -1,0 +1,12 @@
+## p4g14, simple while, no block
+begin
+identifier x := 5 ;
+{
+    while [ x < 10 ]
+        set x = x + 1 ;
+    ;
+
+    cout  x ;
+
+}
+end

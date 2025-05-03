@@ -1,0 +1,7 @@
+## p4g1, lets start with simplest possible program, global variable
+begin
+identifier x := 5 ;
+{
+    cin x ;
+}
+end

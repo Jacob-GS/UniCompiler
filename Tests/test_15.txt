@@ -1,0 +1,9 @@
+begin
+{
+    identifier x := 5;
+    identifier y := 5;
+    identifier z := 0;
+    set z = x + y;
+    cout z;
+}
+end

@@ -1,0 +1,7 @@
+## p4g4, lets test negation
+begin
+identifier x := 5 ;
+{
+    cout :x ;
+}
+end

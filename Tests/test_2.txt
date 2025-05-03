@@ -1,0 +1,7 @@
+## p4g2, Now lets use a local variable
+begin
+{
+   identifier x := 5 ;
+   cin x ;
+}
+end

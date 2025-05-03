@@ -1,0 +1,4 @@
+READ T0
+LOAD T0
+STOP
+T0 5

@@ -1,0 +1,8 @@
+## p4g3, now lets start working with expressions
+begin
+{
+    identifier z := 5 ;
+    identifier x := 3 ;
+    cout x;
+}
+end
