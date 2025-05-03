@@ -7,4 +7,7 @@ file input: java -jar project4.jar <filename>
 Keyboard input: java -jar project4.jar
 indirection: java -jar project4.jar > <filename>
 
-##
+## Defining The Language
+- The entire code must be preceeded with a "begin" and succeeded with a "end"
+- Code must be wrapped in blocks {<code block>}
+- 
